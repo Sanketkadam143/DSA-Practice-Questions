@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int pal(string s, int i)
+bool   pal(string s, int i)
 {
     if (i >= s.length() / 2){
         return true;

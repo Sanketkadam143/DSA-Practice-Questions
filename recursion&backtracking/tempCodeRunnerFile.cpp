@@ -1,1 +1,2 @@
-s
+
+int fib(int n){
