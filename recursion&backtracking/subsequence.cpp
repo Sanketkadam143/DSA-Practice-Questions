@@ -15,10 +15,12 @@ void subsequence(vector<int> input, int index = 0, vector<int> output = {})
          cout << endl;
             return;
     }
-    // take or pick the particular index into the index_sequence
+    // take or pick the particular index into the sequence
 
-    subsequence(input, index + 1, output);
+    
     output.push_back(input[index]);
+    subsequence(input, index + 1, output);
+    output.pop_back();
 
     // not pick or not take condition,this element are not added to the sequence
 
