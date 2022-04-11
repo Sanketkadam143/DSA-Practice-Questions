@@ -1,4 +1,4 @@
-// Sum of N numbers using recurssion
+// Sum of N numbers using recursion
 
 #include<bits/stdc++.h>
 using namespace std;
