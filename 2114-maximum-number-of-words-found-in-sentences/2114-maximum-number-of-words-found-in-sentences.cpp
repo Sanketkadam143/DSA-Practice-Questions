@@ -1,19 +1,14 @@
-/**
- * @param {string[]} sentences
- * @return {number}
- */
-var mostWordsFound = function(sentences) {
-   
-    var ans=0;
-    var s='';
-    for(let i=0; i< sentences.length;i++){
-        s=sentences[i];
-        let count=1;
-        for(let j=0;j<s.length;j++){
-            s[j]===" " && count++;
-            count>ans && (ans=count);
+class Solution {
+public:
+    int mostWordsFound(vector<string>& sentences) {
+        int counter=0,ans=0;
+        string temp="";
+        for(int i=0;i<sentences.size();i++){
+            temp=sentences[i];
+            counter=count(temp.begin(),temp.end(),' ');
+            ans = max(ans,counter+1);
         }
+        
+        return ans;
     }
-    
-    return ans;
 };
