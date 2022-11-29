@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool checkIfPangram(string sentence) {
-        sort(sentence.begin(),sentence.end());
         string alpha="abcdefghijklmnopqrstuvwxyz";
         bool isfound;
         for(int i=0;i<alpha.length();i++){
