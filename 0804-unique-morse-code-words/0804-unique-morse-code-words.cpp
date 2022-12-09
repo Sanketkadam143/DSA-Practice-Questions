@@ -8,8 +8,7 @@ public:
             temp="";
             for(int j=0;j<words[i].length();j++){
               temp+=code[words[i][j]-'a'];
-            }
-           
+            }           
             ans.insert(temp);
         }
       return ans.size();
