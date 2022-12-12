@@ -3,8 +3,7 @@ class Solution
     public:
         int findKthPositive(vector<int> &arr, int k)
         {
-            vector<int> missing;
-            int last = arr.size() + k, ind = 0;
+            int last = arr.size() + k, ind = 0,ans=0,counter=0;
             for (int i = 1; i <= last; i++)
             {
                 if (i <= arr[arr.size()-1])
@@ -15,15 +14,17 @@ class Solution
                     }
                     else
                     {
-                        missing.push_back(i);                      
+                        ans=i;  
+                        counter++;
                     }
                 }
                 else
                 {
-                    missing.push_back(i);
+                   ans=i;
+                   counter++;
                 }
-                if(missing.size()==k)return missing[k-1];
+                if(counter==k)return ans;
             }
-            return missing[k-1];
+            return ans;
         }
 };
