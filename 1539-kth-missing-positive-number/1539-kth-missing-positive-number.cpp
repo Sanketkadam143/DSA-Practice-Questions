@@ -22,6 +22,7 @@ class Solution
                 {
                     missing.push_back(i);
                 }
+                if(missing.size()==k)return missing[k-1];
             }
             return missing[k-1];
         }
