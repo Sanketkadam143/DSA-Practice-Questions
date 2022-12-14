@@ -12,17 +12,30 @@ class Solution {
     // Function to return the count of the number of elements in
     // the intersection of two arrays.
     int NumberofElementsInIntersection(int a[], int b[], int n, int m) {
-       std::set<int> set1, set2,intersection;
-         for (int i = 0; i < n; i++) {
-            set1.insert(a[i]);
+         sort(a,a+n);
+        sort(b,b+m);
+        int count=0;
+        int i=0, j=0;
+        
+        while(i<n && j<m)
+        {
+            if(i!=0 && a[i-1]==a[i])
+            {
+                i++;
+            }else if(a[i]==b[j])
+            {
+                count++;
+                i++;
+                j++;
+            }else if(a[i]<b[j])
+            {
+             i++;   
+            }
+            else{
+                j++;
+            }
         }
-
-       
-        for (int i = 0; i < m; i++) {
-            set2.insert(b[i]);
-        }
-        std::set_intersection(set1.begin(), set1.end(), set2.begin(), set2.end(), std::inserter(intersection, intersection.begin()));
-     return intersection.size();
+     return count;
     }
 };
 
