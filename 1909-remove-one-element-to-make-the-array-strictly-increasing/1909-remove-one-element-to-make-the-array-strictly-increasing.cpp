@@ -11,8 +11,7 @@ public:
                     break;
                 }else if(j==temp.size()-1){
                     return true;
-                }
-                
+                }                
             }
         }
         return false;
