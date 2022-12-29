@@ -9,7 +9,7 @@ public:
             for(int j=i;j<nums.size();j++){
                 nums[j]-=min;
             }
-            counter++;
+        counter++;
         }
         return counter;
     }
