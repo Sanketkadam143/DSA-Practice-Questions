@@ -8,6 +8,6 @@ public:
             sum+=nums[i]-sum;          
             counter++;
         }
-        return counter;
+     return counter;
     }
 };
