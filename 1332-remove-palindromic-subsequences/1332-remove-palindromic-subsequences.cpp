@@ -4,6 +4,6 @@ public:
         string temp=s;
         reverse(temp.begin(),temp.end());
         if(s==temp)return 1;
-        return 2;
+     return 2;
     }
 };
