@@ -21,6 +21,6 @@ public:
          }
          if(isgreater)ans.push_back(min);
      }
-        return ans;
+    return ans;
     }
 };
