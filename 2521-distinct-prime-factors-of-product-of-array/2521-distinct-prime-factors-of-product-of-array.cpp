@@ -1,7 +1,7 @@
 class Solution {
 public:
     int distinctPrimeFactors(vector<int>& nums) {
-        set<int> primeFactors;
+        unordered_set<int> primeFactors;
     for (int num : nums) {
         int n = num;
         for (int i = 2; i <= n; i++) {
