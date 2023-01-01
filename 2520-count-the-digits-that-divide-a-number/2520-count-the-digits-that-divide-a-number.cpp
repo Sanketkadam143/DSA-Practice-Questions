@@ -7,6 +7,6 @@ public:
             int temp=number[i]-'0';
             if(num%temp==0)count++;
         }
-        return count;
+    return count;
     }
 };
