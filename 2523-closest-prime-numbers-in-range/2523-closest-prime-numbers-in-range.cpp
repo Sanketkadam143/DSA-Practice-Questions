@@ -12,7 +12,7 @@ public:
         for(int i=left;i<=right;i++){
             if(isprime(i))primes.push_back(i);
         }
-     if(primes.size()==1)return ans;
+     if(primes.size()==1||primes.empty())return ans;
       int min=INT_MAX,minIndex=1;
       for(int i=1;i<primes.size();i++){
           if(primes[i]-primes[i-1]<min){
@@ -20,10 +20,8 @@ public:
              minIndex=i;
           }
       }
-    if(!primes.empty()){
      ans[0]=primes[minIndex-1];
-     ans[1]=primes[minIndex];
-    }
+     ans[1]=primes[minIndex];   
      return ans;
     }
 };
