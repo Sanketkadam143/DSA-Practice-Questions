@@ -7,8 +7,8 @@ public:
       for(int i=0;i<queries.size();i++){
           counter=0,sum=0;
           for(int j=0;j<nums.size();j++){
-               sum+=nums[j];
-              if(queries[i]>=sum){
+             sum+=nums[j];
+             if(queries[i]>=sum){
               counter++;
              }else{
                   break;
