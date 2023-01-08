@@ -8,7 +8,8 @@ public:
             }
             else if(nums[i]<0){
                  counter++;
-             }else{
+             }
+            else{
                 zeros++;
             }
         }     
