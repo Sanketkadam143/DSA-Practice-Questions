@@ -12,6 +12,6 @@ public:
                 zeros++;
             }
         }     
-       return max(counter,n-zeros-counter);
+      return max(counter,n-zeros-counter);
     }
 };
