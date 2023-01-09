@@ -11,7 +11,7 @@ public:
             if(mp.first==letter){
               ans=mp.second/n*100;
               break;
-            }
+          }
         }
         return ans;
     }
