@@ -6,7 +6,7 @@ public:
         for(auto& word:words1)m1[word]++;
         for(auto& word:words2)m2[word]++;
         for(auto& word:words2){
-            if(m1[word]==1 && m2[word]==1)count++;
+           if(m1[word]==1 && m2[word]==1)count++;
         }
      return count;
     }
