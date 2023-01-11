@@ -14,6 +14,6 @@ public:
                 lastIndex[letter] = i;
             }
         }
-        return true;
+    return true;
     }
 };
