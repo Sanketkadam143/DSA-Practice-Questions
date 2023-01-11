@@ -9,7 +9,7 @@ public:
             } else {
                 int dis = i - lastIndex[letter] - 1;
                 if (dis != distance[letter]) {
-                    return false;
+                 return false;
                 }
                 lastIndex[letter] = i;
             }
