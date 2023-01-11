@@ -1,15 +1,17 @@
 class Solution {
 public:
     bool checkDistances(string s, vector<int>& distance) {
-        for(int i=0;i<s.length();i++){
-            for(int j=i+1;j<s.length();j++){
-                if(s[i]==s[j]){
-                    if((j-i-1)!=distance[s[i] - 'a']){
-                        return false;
-                    }else{
-                        break;
-                    }
+        vector<int> lastIndex(26, -1);
+        for (int i = 0; i < s.length(); i++) {
+            int letter = s[i] - 'a';
+            if (lastIndex[letter] == -1) {
+                lastIndex[letter] = i;
+            } else {
+                int dis = i - lastIndex[letter] - 1;
+                if (dis != distance[letter]) {
+                    return false;
                 }
+                lastIndex[letter] = i;
             }
         }
         return true;
