@@ -12,6 +12,6 @@ public:
         for(auto& map:mp){
             if(mp.count(map.first+min))ans.push_back({map.first,map.first+min});
         }
-     return ans;                                        
+      return ans;                                        
     }
 };
