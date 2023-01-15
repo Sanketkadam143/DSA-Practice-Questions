@@ -9,6 +9,6 @@ public:
                 num=num/10;
             }
         }
-        return abs(dsum-sum);
+     return abs(dsum-sum);
     }
 };
