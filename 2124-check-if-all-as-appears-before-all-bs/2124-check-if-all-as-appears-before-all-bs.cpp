@@ -6,6 +6,6 @@ public:
             if(s[i]=='b')flag=true;
             if(flag && s[i]=='a')return false;
         }
-        return true;
+       return true;
     }
 };
