@@ -13,6 +13,6 @@ public:
             if(left==right)return i;
             
         }
-        return -1;
+     return -1;
     }
 };
