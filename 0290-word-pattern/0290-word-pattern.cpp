@@ -1,7 +1,8 @@
 class Solution {
 public:
     bool wordPattern(string pattern, string s) {
-        unordered_map<char,string> myMap;
+        unordered_map<char, string> charToWord;
+        unordered_map<string, char> wordToChar;
         stringstream ss(s);
         string word;
         int i = 0;
@@ -10,16 +11,14 @@ public:
                 return false;
             }
             char c = pattern[i];
-            if (myMap.count(c) && myMap[c] != word) {
+            if (charToWord.count(c) && charToWord[c] != word) {
                 return false;
-            } else if (!myMap.count(c)) {
-                for (auto& it : myMap) {
-                    if (it.second == word) {
-                        return false;
-                    }
-                }
-                myMap[c] = word;
             }
+            if (wordToChar.count(word) && wordToChar[word] != c) {
+                return false;
+            }
+            charToWord[c] = word;
+            wordToChar[word] = c;
             i++;
         }
         return i == pattern.size();
