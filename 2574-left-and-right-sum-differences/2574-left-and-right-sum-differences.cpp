@@ -20,6 +20,6 @@ public:
             nums[i] = abs(left[i] -right[i]);
         }
 
-        return nums;
+     return nums;
     }
 };
