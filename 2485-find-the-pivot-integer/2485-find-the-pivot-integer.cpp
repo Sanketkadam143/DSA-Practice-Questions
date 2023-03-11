@@ -1,17 +1,16 @@
 class Solution {
 public:
     int pivotInteger(int n) {
-        int left=0,right=0;
-        for(int i=1;i<=n;i++){
-            left=0;
-            right=0;
-            for(int j=1;j<=i;j++){
-                left+=j;              
+        vector<int> prefixSum(n + 1, 0);
+        for (int i = 1; i <= n; i++) {
+            prefixSum[i] = prefixSum[i - 1] + i;
+        }
+        for (int i = 1; i <= n; i++) {
+            int left = prefixSum[i - 1];
+            int right = prefixSum[n] - prefixSum[i];
+            if (left == right) {
+                return i;
             }
-            for(int k=n;k>=i;k--){
-                right+=k;
-            }
-            if(left==right)return i;
         }
         return -1;
     }
