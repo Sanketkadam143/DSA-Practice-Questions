@@ -1,11 +1,7 @@
 class Solution {
 public:
     int smallestEvenMultiple(int n) {
-        int num=n;
-        while(true){
-            if(num%2==0)return num;
-            num+=n;
-        }
-        return n;
+        if(n%2==0)return n;
+        return n*2;      
     }
 };
