@@ -21,6 +21,6 @@ public:
             prevLeaveTime = currLeaveTime;
         }
         
-        return hardestWorkerId;
+     return hardestWorkerId;
     }
 };
