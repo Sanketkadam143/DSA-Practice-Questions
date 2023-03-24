@@ -9,6 +9,6 @@ public:
            }
        }
         if(count)ans=sum/count;
-        return ans;
+      return ans;
     }
 };
