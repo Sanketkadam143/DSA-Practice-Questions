@@ -9,6 +9,6 @@ public:
                 res.push_back(c);
             }
         }
-        return string(res.begin(), res.end());
+    return string(res.begin(), res.end());
     }
 };
