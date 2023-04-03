@@ -23,5 +23,5 @@ var sortString = function(s) {
     }
     ans = ans.join('');
     
-    return ans;
+return ans;
 };
