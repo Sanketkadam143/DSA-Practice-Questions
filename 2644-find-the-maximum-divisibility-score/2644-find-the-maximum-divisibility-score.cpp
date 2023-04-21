@@ -19,6 +19,6 @@ public:
                 best_divisor = divisors[i];
             }
         }
-      return best_divisor;
+         return best_divisor;
     }
 };
