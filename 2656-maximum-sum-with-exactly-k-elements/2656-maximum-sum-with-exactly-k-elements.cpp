@@ -7,6 +7,6 @@ public:
             sum += maxi;
             maxi++;
         }
-       return sum;
-    }
+     return sum;
+ }
 };
