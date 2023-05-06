@@ -5,11 +5,11 @@
 function createCounter(init) {
     let value = init;
 
-    return {
+return {
         increment: () => ++value,
         decrement: () => --value,
         reset: () => value = init,
-    }
+ }
 };
 
 /**
