@@ -12,5 +12,5 @@ var chunk = function(arr, size) {
     index += size;
   }
 
-    return chunkedArray;
+return chunkedArray;
 }
