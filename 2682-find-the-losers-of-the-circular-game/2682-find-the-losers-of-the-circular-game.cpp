@@ -14,8 +14,7 @@ public:
             if(vis[i] == 0) ans.push_back(i+1);
         }
         
-      
-        
+              
         return ans;
     }
 };
