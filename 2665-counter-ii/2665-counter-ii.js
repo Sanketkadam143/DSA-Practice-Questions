@@ -9,8 +9,8 @@ function createCounter(init) {
         increment: () => ++value,
         decrement: () => --value,
         reset: () => value = init,
-       }
-};
+     }
+  };
 
 /**
  * const counter = createCounter(5)
