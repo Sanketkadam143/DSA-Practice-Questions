@@ -6,6 +6,6 @@ public:
                 if(s[i]<s[j]) s[j--]=s[i++];
                 else s[i++]=s[j--];
         }
-        return s;
+    return s;
     }
 };
