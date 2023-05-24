@@ -10,6 +10,6 @@ public:
             if(mp2[i]==0)mp2.erase(i);
             ans.push_back(mp1.size()-mp2.size());
         }
-        return ans;
+return ans;
     }
 };
