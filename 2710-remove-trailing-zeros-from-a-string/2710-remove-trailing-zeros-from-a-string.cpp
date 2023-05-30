@@ -8,6 +8,7 @@ public:
         }
         string ans="";
         for(int k =0;k<=i;k++) ans+=num[k];
-return ans;
+    
+        return ans;
     }
 };
